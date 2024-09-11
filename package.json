@@ -1,0 +1,49 @@
+{
+	"name": "@smeijer/ky",
+	"private": true,
+	"license": "MIT",
+	"repository": "smeijer/ky",
+	"funding": "https://github.com/smeijer/ky?sponsor=1",
+	"author": {
+		"name": "Stephan Meijer",
+		"email": "stephan.meijer@gmail.com",
+		"url": "https://meijer.ws"
+	},
+	"type": "module",
+	"scripts": {
+		"build": "tsx republish.tsx"
+	},
+	"keywords": [
+		"fetch",
+		"request",
+		"requests",
+		"http",
+		"https",
+		"fetching",
+		"get",
+		"url",
+		"curl",
+		"wget",
+		"net",
+		"network",
+		"ajax",
+		"api",
+		"rest",
+		"xhr",
+		"browser",
+		"got",
+		"axios",
+		"node-fetch",
+		"ky",
+		"common-js",
+		"cjs"
+	],
+	"sideEffects": false,
+	"dependencies": {
+		"@actions/core": "^1.10.1",
+		"@arethetypeswrong/cli": "^0.16.2",
+		"rimraf": "^6.0.1",
+		"tshy": "^3.0.2",
+		"tsx": "^4.19.0"
+	}
+}

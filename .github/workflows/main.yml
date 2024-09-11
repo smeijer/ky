@@ -1,0 +1,23 @@
+name: Daily Build
+
+on:
+  schedule:
+    - cron: '0 6 * * *' # Every day at 6 AM
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Node.js and dependencies
+        uses: bahmutov/npm-install@v1
+        with:
+          useLockFile: false
+
+      - name: Run build
+        run: npm run build
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
